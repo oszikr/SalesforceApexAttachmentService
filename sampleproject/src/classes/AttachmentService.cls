@@ -15,8 +15,8 @@ global without sharing class AttachmentService {
 		RestContext.response.responseBody = Blob.valueOf(action(RestContext.request.requestBody.toString()));
 	}
 	
-	private static String pwdCheck = '';
-	private static String userCheck = 'document_downloader';
+	private static String pwdCheck = 'astgawrqrqw2r3w43q2rq3w2'; // passwd
+	private static String userCheck = 'document_downloader'; // username
 	
 	public static String action(String requestBody){
 		system.debug('AttachmentService> ' + requestBody);
@@ -44,9 +44,9 @@ global without sharing class AttachmentService {
 	}
 	
 	public class AttachmentRequest{
-		public String id;
-		public String user;
-		public String pwd;
+		public String id; // attachment id
+		public String user; // usarname
+		public String pwd; // passwd
 	}
 	
 	public class AttachmentWrapper {
