@@ -15,7 +15,7 @@ global without sharing class AttachmentService {
 		RestContext.response.responseBody = Blob.valueOf(action(RestContext.request.requestBody.toString()));
 	}
 	
-	private static String pwdCheck = 'astgawrqrqw2r3w43q2rq3w2'; // passwd
+	private static String pwdCheck = ''; // passwd
 	private static String userCheck = 'document_downloader'; // username
 	
 	public static String action(String requestBody){
